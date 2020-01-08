@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:400,600,700,900&display=swap" rel="stylesheet">
+    <!-- Animation W3S -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Title and favicon -->
+    <title>ROCKETS RACE!</title>
+    <link rel="icon" type="png" sizes="16x16" href="../../images/favicon-rockets.png">
+</head>
+
+<body>
+
+    <!-- Rockets content -->
+
+    <h1>ROCKETS RACE!</h1>
+
+    <div class="box">
+
+        <div class="container">
+
+            <!-- Buttons rockets -->
+            <div class="boxButtons">
+                <button id="buttonR1" class="w3-animate-opacity">CREATE FIRST ROCKET</button>
+                <button id="buttonR2" class="w3-animate-opacity">CREATE SEECOND ROCKET</button>
+            </div>
+
+            <!-- Rocket 1 -->
+            <div class="boxBorder" id="boxRocket1">
+
+                <div class="boxImage">
+                    <img class="w3-center w3-animate-bottom" src="../../images/space-ship.png" alt="Rocket 1">
+                </div>
+
+                <div class="anotherBox">
+                    <div class="boxInfo">
+                        <button class="info" id="info1">INFORMATION</button>
+                        <p id="rocketText1"></p>
+                    </div>
+
+                    <button class="speed" id="speed1">SPEED</button>
+
+                    <div class="boxSpeed" id="boxSpeed1">
+                        <strong id="powerText1">CURRENT IS 0</strong>
+                        <p>CHANGE THE POWER OF THE ENGINE</p>
+                        <button class="acc" id="accelerate1">&#8593;</button>
+                        <button class="bra" id="brake1">&#8595;</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rocket 2 -->
+            <div class="boxBorder" id="boxRocket2">
+
+                <div class="boxImage">
+                    <img class="w3-center w3-animate-bottom" src="../../images/space-ufo.png" alt="Rocket 2">
+                </div>
+
+                <div class="anotherBox">
+                    <div class="boxInfo">
+                        <button class="info" id="info2">INFORMATION</button>
+                        <p id="rocketText2"></p>
+                    </div>
+
+                    <button class="speed" id="speed2">SPEED</button>
+
+                    <div class="boxSpeed" id="boxSpeed2">
+                        <strong id="powerText2">CURRENT IS 0</strong>
+                        <p>CHANGE THE POWER OF THE ENGINE</p>
+                        <button class="acc" id="accelerate2">&#8593;</button>
+                        <button class="bra" id="brake2">&#8595;</button>
+                    </div>
+                </div>
+
+            </div>
+            <button class="w3-center w3-animate-bottom" id="showAll">SHOW EVERYTHING ABOUT THE ROCKETS</button>
+        </div>
+
+        <!-- Presentation image -->
+        <img id="image" src="../../images/image-rockets.jpg" alt="Rockets Race Image">
+
+    </div>
+
+    <!-- Background video-->
+    <video autoplay muted loop id="bgVideo">
+        <source src="../../video/space-stars.mp4" type="video/mp4">
+    </video>
+
+    <!-- Rockets scripts -->
+    <script src="../models/rocket.js"></script>
+    <script src="../controllers/main.js"></script>
+
+</body>
+
+</html>

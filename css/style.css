@@ -1,0 +1,174 @@
+/* GENERAL */
+
+body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    color: #E6D394;
+    background-color: #000000;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 5em;
+    letter-spacing: 0.3em;
+    color: #B7403D;
+    margin: 20px 20px 5px 20px;
+    text-align: center;
+}
+
+h1:hover {
+    color: #E6D394;
+}
+
+p {
+    margin: 5px;
+    color: #E6D394;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+img {
+    height: 250px;
+    width: 210px;
+    display: block;
+    margin-left: 10px; 
+    margin-right: auto;
+    filter: contrast(120%);
+}
+
+strong {
+    color: #B7403D;
+}
+
+/* IMAGE */
+
+#image {
+    height: 500px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border: 10px solid #B7403D;
+    filter: sepia(20%) contrast(110%) brightness(100%);
+}
+
+#image:hover {
+    filter: grayscale(200%) contrast(130%);
+}
+
+/* VIDEO */
+
+#bgVideo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+/* CREATE ROCKET BUTTONS */
+
+.boxButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonR1, #buttonR2 {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 11px 5px 11px;
+    background-color: #385252;
+    color: #F8F5D8;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+/* CONTENT */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.boxBorder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px dotted #385252;
+    border-radius: 20px;
+    padding: 20px 15px 10px 15px;
+    margin-bottom: 15px;
+}
+
+.boxImage {
+    width: 200px;
+    height: auto;
+}
+
+.anotherBox {
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+.boxInfo, .boxSpeed {
+    flex-direction: row;
+    width: 500px;
+    height: 100px;
+}
+
+/* REST OF THE BUTTONS */
+
+.acc {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: #7A887C;
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.bra {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 11px 5px 11px;
+    background-color: #B44B44;
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.info, .speed, #showAll {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 11px 5px 11px;
+    background-color: #385252;
+    color: #F8F5D8;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#showAll {
+    background-color: #E6D394;
+    color: #000000;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Faster One', cursive;
+}
